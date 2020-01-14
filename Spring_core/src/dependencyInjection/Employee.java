@@ -1,9 +1,8 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package dependencyInjection;
+
+import java.util.Iterator;
+import java.util.List;
 
 /**
  *
@@ -12,17 +11,22 @@ package dependencyInjection;
 public class Employee {
     private int id;
     private String name;
-    private Address address;
+    private List<Address> address;
 
-    public Employee(int id, String name, Address address) {
+    public Employee(int id, String name, List<Address> address) {
         this.id = id;
         this.name = name;
         this.address = address;
-    } 
+    }
+
     
     public void show(){
         System.out.println(id+" : "+name);
-        System.out.println(address);
+        Iterator<Address> iterate=address.iterator();
+        while (iterate.hasNext()) {
+            System.out.println(iterate.next());
+            
+        }
     }
             
 }
