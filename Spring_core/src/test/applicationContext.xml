@@ -8,9 +8,18 @@ http://www.springframework.org/schema/beans http://www.springframework.org/schem
     <bean id="hello" class="test.Hello">
         
     </bean>
+    <bean id="a1" class="dependencyInjection.Address">
+        <constructor-arg value="Mohammadpur"></constructor-arg>
+        <constructor-arg value="Dhaka"></constructor-arg>
+        <constructor-arg value="Bangladesh"></constructor-arg>
+    </bean>
+    
     <bean id="e" class="dependencyInjection.Employee">
         <constructor-arg value="10" type="int"></constructor-arg>
         <constructor-arg value="Khalid"></constructor-arg>
+        <constructor-arg>
+            <ref bean="a1"></ref>
+        </constructor-arg>
     </bean>
 </beans>
 
