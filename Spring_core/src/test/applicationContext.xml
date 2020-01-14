@@ -21,6 +21,9 @@ http://www.springframework.org/schema/beans http://www.springframework.org/schem
     </bean>
     
     <bean id="e" class="dependencyInjection.Employee">
+        <property name="name">
+            <value>A Khalid</value>
+        </property>
         <constructor-arg value="10" type="int"></constructor-arg>
         <constructor-arg value="Khalid"></constructor-arg>
         <constructor-arg>

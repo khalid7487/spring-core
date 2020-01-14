@@ -13,6 +13,15 @@ public class Employee {
     private String name;
     private List<Address> address;
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    
     public Employee(int id, String name, List<Address> address) {
         this.id = id;
         this.name = name;
