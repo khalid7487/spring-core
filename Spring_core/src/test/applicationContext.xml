@@ -8,6 +8,9 @@ http://www.springframework.org/schema/beans http://www.springframework.org/schem
     <bean id="hello" class="test.Hello">
         
     </bean>
-
+    <bean id="e" class="dependencyInjection.Employee">
+        <constructor-arg value="10" type="int"></constructor-arg>
+        <constructor-arg value="Khalid"></constructor-arg>
+    </bean>
 </beans>
 
