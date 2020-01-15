@@ -34,8 +34,8 @@ http://www.springframework.org/schema/beans http://www.springframework.org/schem
 
         </constructor-arg>
     </bean>
-    <bean class="dependencyInjection.EmployeeBeanPostProcessor" >
-        
-    </bean>
+<!--    <bean class="dependencyInjection.EmployeeBeanPostProcessor" />-->
+    <bean class="dependencyInjection.EmployeeBeanFactoryPP" />
+       
 </beans>
 
