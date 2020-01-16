@@ -8,10 +8,10 @@ http://www.springframework.org/schema/beans http://www.springframework.org/schem
     <bean id="hello" class="test.Hello">
         
     </bean>
-    <bean id="address1" class="dependencyInjection.Address">
-        <constructor-arg value="#{address1.state}"></constructor-arg>
-        <constructor-arg value="#{address1.city}"></constructor-arg>
-        <constructor-arg value="#{address1.country}"></constructor-arg>
+    <bean id="a1" class="dependencyInjection.Address">
+        <constructor-arg value="Mohammadpur"></constructor-arg>
+        <constructor-arg value="Dhaka"></constructor-arg>
+        <constructor-arg value="Bangladesh"></constructor-arg>
     </bean>
     
     <bean id="a2" class="dependencyInjection.Address">
@@ -20,7 +20,7 @@ http://www.springframework.org/schema/beans http://www.springframework.org/schem
         <constructor-arg value="Bangladesh 1"></constructor-arg>
     </bean>
     
-    <bean id="e" class="dependencyInjection.Employee">
+    <bean id="e2" class="dependencyInjection.Employee">
         <property name="name">
             <value>A Khalid</value>
         </property>
@@ -34,11 +34,9 @@ http://www.springframework.org/schema/beans http://www.springframework.org/schem
 
         </constructor-arg>
     </bean>
-<!--    <bean class="dependencyInjection.EmployeeBeanPostProcessor" />-->
-<!--    <bean class="dependencyInjection.EmployeeBeanFactoryPP" />-->
-    <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
-        <property name="location" value="test/address.properties"></property>
-    </bean>
+    <!--    <bean class="dependencyInjection.EmployeeBeanPostProcessor" />-->
+    <!--    <bean class="dependencyInjection.EmployeeBeanFactoryPP" />-->
+    
        
 </beans>
 
