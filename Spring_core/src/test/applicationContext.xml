@@ -20,6 +20,12 @@ http://www.springframework.org/schema/beans http://www.springframework.org/schem
         <constructor-arg value="Bangladesh 1"></constructor-arg>
     </bean>
     
+    <bean id="e" class="dependencyInjection.Employee" >
+        <property name="address">
+            <ref bean="a1"></ref>
+        </property>
+    </bean>
+    
     <bean id="e2" class="dependencyInjection.Employee">
         <property name="name">
             <value>A Khalid</value>
