@@ -1,5 +1,6 @@
 package service;
 
+import aspect.Logger;
 import model.Accountant;
 import model.Manager;
 
@@ -9,6 +10,7 @@ public class EmpService {
     private Manager manager;
     private Accountant accountant;
 
+    @Logger
     public Manager getManager() {
         return manager;
     }

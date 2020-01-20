@@ -37,7 +37,7 @@ public class EMpAspect {
     @Pointcut("within(model.Manager)")
     public void allManager(){}
 
-    @Around("allGetters()")
+    @Around("@annotation(aspect.Logger)")
     public  void aroundAdvice(ProceedingJoinPoint proceedingJoinPoint){
         try{
             System.out.println("before advice");
