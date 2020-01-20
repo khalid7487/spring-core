@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 @Aspect
 public class EMpAspect {
 
-    @Before("allGetters()")
+    @Before("allGetters() && allManager()")
     public void beforeAdvice(){
         System.out.println("Aspect run");
     }
@@ -21,5 +21,9 @@ public class EMpAspect {
 
     @Pointcut("execution(public * get*(..))")
     public void allGetters(){}
+
+    @Pointcut("within(model.Manager)")
+    public void allManager(){}
+
 
 }
