@@ -1,5 +1,7 @@
 package aspect;
 
+import model.Manager;
+import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.annotation.Pointcut;
@@ -9,15 +11,16 @@ import org.springframework.stereotype.Component;
 @Aspect
 public class EMpAspect {
 
-    @Before("allGetters() && allManager()")
-    public void beforeAdvice(){
-        System.out.println("Aspect run");
+    @Before("allManager()")
+    public void beforeAdvice(JoinPoint joinPoint){
+        System.out.println("Aspect run " );
+        Manager manager=(Manager)joinPoint.getTarget();
     }
 
-    @Before("allGetters()")
-    public void secondAdvice(){
-        System.out.println("Second run");
-    }
+//    @Before("allGetters()")
+//    public void secondAdvice(){
+//        System.out.println("Second run");
+//    }
 
     @Pointcut("execution(public * get*(..))")
     public void allGetters(){}
