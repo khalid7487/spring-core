@@ -8,7 +8,7 @@ public class Test {
     public static void main(String[] args) {
         ApplicationContext context=new ClassPathXmlApplicationContext("test/spring_aop.xml");
         EmpService empService=context.getBean("empService",EmpService.class);
-        empService.getManager().setName("Hello Khalid!");
+        empService.getManager().setNameReturn("Hello Khalid!");
 //        System.out.println(empService.getManager().getName());
 
     }

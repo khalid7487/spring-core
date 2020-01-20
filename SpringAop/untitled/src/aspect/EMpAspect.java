@@ -2,9 +2,7 @@ package aspect;
 
 import model.Manager;
 import org.aspectj.lang.JoinPoint;
-import org.aspectj.lang.annotation.Aspect;
-import org.aspectj.lang.annotation.Before;
-import org.aspectj.lang.annotation.Pointcut;
+import org.aspectj.lang.annotation.*;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -13,13 +11,18 @@ public class EMpAspect {
 
     @Before("allManager()")
     public void beforeAdvice(JoinPoint joinPoint){
-        System.out.println("Aspect run " );
+   //     System.out.println("Aspect run " );
         Manager manager=(Manager)joinPoint.getTarget();
     }
 
-    @Before("args(name)")
+    @AfterReturning("args(name)")
     public void stringArgMethods(String name){
-        System.out.println("Methods run with String args with value: "+name);
+        System.out.println("Methods run with String args with value: "+name );
+    }
+
+    @AfterThrowing("args(name)")
+    public void stringArgMethodsThrow(String name){
+        System.out.println("Methods run after throwing: "+name);
     }
 
 //    @Before("allGetters()")

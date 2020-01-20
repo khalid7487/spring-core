@@ -9,5 +9,13 @@ public class Manager {
 
     public void setName(String name) {
         this.name = name;
+        System.out.println("in set method");
+
+    }
+
+    public String setNameReturn(String name) {
+        this.name = name;
+        System.out.println("in set method");
+        return name;
     }
 }
