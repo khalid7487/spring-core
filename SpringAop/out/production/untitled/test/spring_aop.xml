@@ -21,5 +21,10 @@
     </bean>
 <!--    <context:annotation-config></context:annotation-config>-->
 <!--    <context:component-scan base-package="aspect" />-->
-
+   <aop:config>
+       <aop:aspect id="empAspect" ref="eMpAspect">
+           <aop:pointcut id="allGetters" expression="execution(public * get*(..))"/>
+           <aop:around method="aroundAdvice" pointcut-ref="allGetters"/>
+       </aop:aspect>
+   </aop:config>
 </beans>

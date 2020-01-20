@@ -6,47 +6,49 @@ import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.*;
 import org.springframework.stereotype.Component;
 
-@Component
-@Aspect
+//@Component
+//@Aspect
 public class EMpAspect {
+//
+//    @Before("allManager()")
+//    public void beforeAdvice(JoinPoint joinPoint){
+//       System.out.println("Aspect run " );
+////        Manager manager=(Manager)joinPoint.getTarget();
+//    }
 
-    @Before("allManager()")
-    public void beforeAdvice(JoinPoint joinPoint){
-       System.out.println("Aspect run " );
-//        Manager manager=(Manager)joinPoint.getTarget();
-    }
+//    @AfterReturning("args(name)")
+//    public void stringArgMethods(String name){
+//        System.out.println("Methods run with String args with value: "+name );
+//    }
 
-    @AfterReturning("args(name)")
-    public void stringArgMethods(String name){
-        System.out.println("Methods run with String args with value: "+name );
-    }
-
-    @AfterThrowing("args(name)")
-    public void stringArgMethodsThrow(String name){
-        System.out.println("Methods run after throwing: "+name);
-    }
+//    @AfterThrowing("args(name)")
+//    public void stringArgMethodsThrow(String name){
+//        System.out.println("Methods run after throwing: "+name);
+//    }
 
 //    @Before("allGetters()")
 //    public void secondAdvice(){
 //        System.out.println("Second run");
 //    }
 
-    @Pointcut("execution(public * get*(..))")
+//    @Pointcut("execution(public * get*(..))")
     public void allGetters(){}
+//
+//    @Pointcut("within(model.Manager)")
+//    public void allManager(){}
 
-    @Pointcut("within(model.Manager)")
-    public void allManager(){}
-
-    @Around("@annotation(aspect.Logger)")
-    public  void aroundAdvice(ProceedingJoinPoint proceedingJoinPoint){
+ //   @Around("allGetters()")
+    public  Object aroundAdvice(ProceedingJoinPoint proceedingJoinPoint){
+        Object retobject=null;
         try{
             System.out.println("before advice");
-            proceedingJoinPoint.proceed();
+            retobject =proceedingJoinPoint.proceed();
             System.out.println("after returning");
         }catch (Throwable e){
             System.out.println("after throwable");
         }
         System.out.println("finally");
+        return retobject;
     }
 
 

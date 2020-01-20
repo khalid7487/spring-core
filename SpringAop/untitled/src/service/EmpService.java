@@ -10,7 +10,7 @@ public class EmpService {
     private Manager manager;
     private Accountant accountant;
 
-    @Logger
+//    @Logger
     public Manager getManager() {
         return manager;
     }
