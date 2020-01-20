@@ -2,6 +2,7 @@ package aspect;
 
 import model.Manager;
 import org.aspectj.lang.JoinPoint;
+import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.*;
 import org.springframework.stereotype.Component;
 
@@ -11,8 +12,8 @@ public class EMpAspect {
 
     @Before("allManager()")
     public void beforeAdvice(JoinPoint joinPoint){
-   //     System.out.println("Aspect run " );
-        Manager manager=(Manager)joinPoint.getTarget();
+       System.out.println("Aspect run " );
+//        Manager manager=(Manager)joinPoint.getTarget();
     }
 
     @AfterReturning("args(name)")
@@ -35,6 +36,18 @@ public class EMpAspect {
 
     @Pointcut("within(model.Manager)")
     public void allManager(){}
+
+    @Around("allGetters()")
+    public  void aroundAdvice(ProceedingJoinPoint proceedingJoinPoint){
+        try{
+            System.out.println("before advice");
+            proceedingJoinPoint.proceed();
+            System.out.println("after returning");
+        }catch (Throwable e){
+            System.out.println("after throwable");
+        }
+        System.out.println("finally");
+    }
 
 
 }
