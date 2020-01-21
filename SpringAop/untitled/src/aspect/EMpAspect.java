@@ -51,5 +51,8 @@ public class EMpAspect {
         return retobject;
     }
 
+    public void loggerAdvice(){
+        System.out.println("Logger advice called");
+    }
 
 }
