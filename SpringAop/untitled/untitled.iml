@@ -5,6 +5,7 @@
       <configuration>
         <fileset id="fileset" name="Spring_aop" removed="false">
           <file>file://$MODULE_DIR$/src/test/spring_aop.xml</file>
+          <file>file://$MODULE_DIR$/src/jdbctest/spring-jdbc.xml</file>
         </fileset>
       </configuration>
     </facet>
@@ -142,5 +143,6 @@
       </library>
     </orderEntry>
     <orderEntry type="library" name="commons-logging-1.2-javadoc1" level="project" />
+    <orderEntry type="library" name="mysql-connector-java-5.1.47" level="project" />
   </component>
 </module>
