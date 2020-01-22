@@ -4,6 +4,10 @@ import jdbcmodel.Employee;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
+import org.springframework.jdbc.core.namedparam.MapSqlParameterSource;
+import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
+import org.springframework.jdbc.core.namedparam.SqlParameterSource;
+
 import javax.sql.DataSource;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -13,13 +17,15 @@ import java.util.List;
 public class EmployeeDao {
     DataSource dataSource;
     JdbcTemplate jdbcTemplate;
+    NamedParameterJdbcTemplate namedParameterJdbcTemplate;
     public DataSource getDataSource() {
         return dataSource;
     }
 
     @Autowired
     public void setDataSource(DataSource dataSource) {
-        jdbcTemplate = new JdbcTemplate(dataSource);
+        this.jdbcTemplate = new JdbcTemplate(dataSource);
+        this.namedParameterJdbcTemplate=new NamedParameterJdbcTemplate(dataSource);
     }
 
     public int saveEmployee(Employee employee){
@@ -29,6 +35,11 @@ public class EmployeeDao {
     public int saveEmployeePS(Employee employee){
         String sql="insert into employee(emp_name,salary) values(?,?)";
         return jdbcTemplate.update(sql, new Object[]{employee.getName(),employee.getSalary()});
+    }
+    public int saveEmployeeNPS(Employee employee){
+        String sql="insert into employee(emp_name,salary) values(:name,:salary)";
+        SqlParameterSource namSqlParameterSource=new MapSqlParameterSource("name",employee.getName()).addValue("salary",employee.getSalary());
+        return namedParameterJdbcTemplate.update(sql, namSqlParameterSource);
     }
     public String getEmployeebyId(int id){
         String sql="select emp_name from employee where emp_id=?";

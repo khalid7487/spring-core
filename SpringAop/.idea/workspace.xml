@@ -2,21 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20d25e04-f85a-4b6c-b054-e1b7af347fed" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_5_1_47.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/untitled/src/dao/EmployeeDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/untitled/src/jdbcmodel/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/untitled/src/jdbctest/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/untitled/src/jdbctest/spring-jdbc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/com_springsource_net_sf_cglib_2_2_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/com_springsource_net_sf_cglib_2_2_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled/META-INF/untitled.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/untitled.iml" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/untitled.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring_jdbc/nbproject/project.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../spring_jdbc/nbproject/project.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring_jdbc/src/dao/EmployeeDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring_jdbc/src/dao/EmployeeDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring_jdbc/src/test/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring_jdbc/src/test/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring_jdbc/src/test/spring-jdbc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring_jdbc/src/test/spring-jdbc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/src/dao/EmployeeDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/src/dao/EmployeeDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/src/jdbctest/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/src/jdbctest/Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,7 +133,7 @@
       <workItem from="1579626025737" duration="606000" />
       <workItem from="1579626660115" duration="3659000" />
       <workItem from="1579670522404" duration="39000" />
-      <workItem from="1579698389897" duration="3046000" />
+      <workItem from="1579698389897" duration="5168000" />
     </task>
     <servers />
   </component>
@@ -188,22 +176,22 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="517" y="301" width="356" height="166" key="Github.CreateGistDialog/0.0.1366.768@0.0.1366.768" timestamp="1579347249352" />
-    <state width="653" height="186" key="GridCell.Tab.0.bottom" timestamp="1579701413901">
+    <state width="653" height="186" key="GridCell.Tab.0.bottom" timestamp="1579704012359">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="653" height="186" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1579701413901" />
-    <state width="653" height="186" key="GridCell.Tab.0.center" timestamp="1579701413900">
+    <state width="653" height="186" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1579704012359" />
+    <state width="653" height="186" key="GridCell.Tab.0.center" timestamp="1579704012359">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="653" height="186" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1579701413900" />
-    <state width="653" height="186" key="GridCell.Tab.0.left" timestamp="1579701413900">
+    <state width="653" height="186" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1579704012359" />
+    <state width="653" height="186" key="GridCell.Tab.0.left" timestamp="1579704012359">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="653" height="186" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1579701413900" />
-    <state width="653" height="186" key="GridCell.Tab.0.right" timestamp="1579701413900">
+    <state width="653" height="186" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1579704012359" />
+    <state width="653" height="186" key="GridCell.Tab.0.right" timestamp="1579704012359">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="653" height="186" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1579701413900" />
+    <state width="653" height="186" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1579704012359" />
     <state x="5" y="0" key="SettingsEditor" timestamp="1579627913194">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
