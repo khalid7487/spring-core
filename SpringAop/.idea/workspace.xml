@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="20d25e04-f85a-4b6c-b054-e1b7af347fed" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/src/dao/EmployeeDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/src/dao/EmployeeDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/src/jdbctest/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/src/jdbctest/Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,7 +131,8 @@
       <workItem from="1579626025737" duration="606000" />
       <workItem from="1579626660115" duration="3659000" />
       <workItem from="1579670522404" duration="39000" />
-      <workItem from="1579698389897" duration="5168000" />
+      <workItem from="1579698389897" duration="5846000" />
+      <workItem from="1579759891856" duration="685000" />
     </task>
     <servers />
   </component>
@@ -176,30 +175,30 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="517" y="301" width="356" height="166" key="Github.CreateGistDialog/0.0.1366.768@0.0.1366.768" timestamp="1579347249352" />
-    <state width="653" height="186" key="GridCell.Tab.0.bottom" timestamp="1579704012359">
+    <state width="653" height="186" key="GridCell.Tab.0.bottom" timestamp="1579721388363">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="653" height="186" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1579704012359" />
-    <state width="653" height="186" key="GridCell.Tab.0.center" timestamp="1579704012359">
+    <state width="653" height="186" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1579721388363" />
+    <state width="653" height="186" key="GridCell.Tab.0.center" timestamp="1579721388363">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="653" height="186" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1579704012359" />
-    <state width="653" height="186" key="GridCell.Tab.0.left" timestamp="1579704012359">
+    <state width="653" height="186" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1579721388363" />
+    <state width="653" height="186" key="GridCell.Tab.0.left" timestamp="1579721388363">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="653" height="186" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1579704012359" />
-    <state width="653" height="186" key="GridCell.Tab.0.right" timestamp="1579704012359">
+    <state width="653" height="186" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1579721388363" />
+    <state width="653" height="186" key="GridCell.Tab.0.right" timestamp="1579721388363">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="653" height="186" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1579704012359" />
+    <state width="653" height="186" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1579721388363" />
     <state x="5" y="0" key="SettingsEditor" timestamp="1579627913194">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="5" y="0" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1579627913194" />
-    <state x="44" y="209" key="com.intellij.ide.util.TipDialog" timestamp="1579698390541">
+    <state x="44" y="209" key="com.intellij.ide.util.TipDialog" timestamp="1579759897645">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="44" y="209" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1579698390541" />
+    <state x="44" y="209" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1579759897645" />
     <state x="713" y="0" width="607" height="768" key="find.popup" timestamp="1579699277601">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
