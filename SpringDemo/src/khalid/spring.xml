@@ -1,26 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<beans xmlns="http://www.springframework.org/schema/beans"
+<beans  xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns:p="http://www.springframework.org/schema/p"
 	xsi:schemaLocation="
 http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
 
-	<bean id="triangle" class="khalid.Triangle1">
-	<property name="pointA" ref="zeroPoint"/>
-	<property name="pointB" ref="point2"/>
-	<property name="pointC" ref="point3"/>
+	<bean id="triangle" class="khalid.Triangle1" init-method="myInit" destroy-method="cleanUp">
+		<property name="pointA">
+			<list>
+				<ref bean="zeroPoint"/>
+				<ref bean="point2"/>
+				<ref bean="point3"/>
+			</list>
+		</property>
 	</bean>
-	<bean id="zeroPoint" class="khalid.Polint">
+	<bean id="zeroPoint" class="khalid.Point">
 		<property name="x" value="0" />
 		<property name="y" value="0" />
 	</bean>
-	<bean id="point2" class="khalid.Polint">
+	<bean id="point2" class="khalid.Point">
 		<property name="x" value="-20" />
 		<property name="y" value="0" />
 	</bean>
-	<bean id="point3" class="khalid.Polint">
+	<bean id="point3" class="khalid.Point">
 		<property name="x" value="0" />
 		<property name="y" value="20" />
 	</bean>
+
 </beans>
